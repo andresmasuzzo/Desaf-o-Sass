@@ -1,0 +1,121 @@
+/*HEADER*/
+
+header{
+    width: 100%;
+    background-color: black;
+}
+
+.logo{
+    margin:auto;
+    width: 300px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.menu{
+    width:100%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.menuItems{
+    display: flex;
+    justify-content: center;
+    margin-right: 42px;
+
+    li{
+        padding-left: 20px;
+        padding-right: 20px;
+        border-right: 2px solid white;
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            color: rgb(179, 177, 177);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.09rem;
+            font-weight: bold;
+        }         
+    }
+}
+
+.menuItems li a:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+
+@media all and (max-width: 760px){
+    .logo{
+        margin:auto;
+        width: 200px;
+        height: auto;
+        padding-top:5px;
+    }
+    .menuItems{
+        
+        li{
+            padding-left: 15px;
+            padding-right: 15px;
+        
+            a{
+                font-size: 0.9rem;
+                letter-spacing: 0.07rem;
+            }
+        }
+    }
+    
+    .menu{
+        padding-top: 13px;
+        padding-bottom: 11px;
+    }
+}
+@media all and (max-width: 600px){
+    .logo{
+        margin:auto;
+        width: 150px;
+        height: auto;
+        padding-top:5px;
+    }
+    .menuItems{ 
+
+        li{
+            padding-left: 10px;
+            padding-right: 10px;
+            
+            a{
+                font-size: 0.6rem;
+                letter-spacing: 0.05rem;
+            }
+        }
+    }   
+    .menu{
+        padding-top: 11px;
+        padding-bottom: 8px;
+    }
+}
+
+@media all and (max-width: 420px){
+    .logo{
+        margin:auto;
+        width: 120px;
+        height: auto;
+        padding-top:4px;
+    }
+    .menuItems{
+        li{
+            padding-left: 7px;
+            padding-right: 7px;
+
+            a{
+                font-size: 0.5rem;
+                letter-spacing: 0.04rem;
+            }
+        }
+    }
+    .menu{
+        padding-top: 9px;
+        padding-bottom: 6px;
+    }
+}
